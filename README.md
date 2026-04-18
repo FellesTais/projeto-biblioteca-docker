@@ -38,7 +38,7 @@ Além disso, o banco de dados será inicializado automaticamente através dos sc
 
 ## Acesso ao sistema
 
-Após subir os containers, acesse no navegador:
+Após subir os containers, aguarde uns segundos e acesse no navegador:
 
 ```bash
 http://localhost:8080/
