@@ -18,15 +18,6 @@ A aplicação consiste em um sistema simples de biblioteca, reutilizado apenas c
 
 ---
 
-## Requisitos
-
-Para executar este projeto é necessário ter instalado:
-
-* Docker
-* Docker Compose
-
----
-
 ## Como rodar o projeto
 
 Dentro da pasta onde está localizado o arquivo `docker-compose.yml`, execute:
