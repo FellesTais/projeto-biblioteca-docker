@@ -20,7 +20,7 @@ A aplicação consiste em um sistema simples de biblioteca, reutilizado apenas c
 
 ## Como rodar o projeto
 
-Dentro da pasta onde está localizado o arquivo `docker-compose.yml`, execute:
+Com o docker rodando, dentro da pasta onde está localizado o arquivo `docker-compose.yml`, execute:
 
 ```bash
 docker-compose up -d
