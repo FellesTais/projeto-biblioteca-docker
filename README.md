@@ -38,13 +38,15 @@ Além disso, o banco de dados será inicializado automaticamente através dos sc
 
 ## Acesso ao sistema
 
-Após subir os containers, aguarde uns segundos e acesse no navegador:
+Após subir os containers, acesse no navegador:
 
 ```bash
 http://localhost:8080/
 ```
 
 Se tudo estiver correto, será exibida a tela de login do sistema.
+
+Observação: caso apareça a mensagem "Erro ao conectar: SQLSTATE[HY000] [2002] Connection refused", aguarde alguns segundos e tente novamente.
 
 Se precisar parar os containers, execute:
 
