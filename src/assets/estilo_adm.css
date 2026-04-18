@@ -1,0 +1,76 @@
+body {
+    background-color: #3E2723;
+    padding-top: 10px;
+}
+
+/* Navbar */
+@media (min-width: 990px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        width: 0%;
+        height: 2px;
+        background-color: #5A3A34;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+/* Fim Navbar */
+
+/* Solicitações*/
+.btn-acoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+  vertical-align: middle; 
+}
+
+/* Fim Solicitações*/
+
+.form-cadastrar-categoria input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.botoes-categoria {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.campos-cadastro-livro h6 {
+  font-weight: bold;
+}
+
+.campos-cadastro-livro label {
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.campos-cadastro-livro input,
+.campos-cadastro-livro textarea,
+.campos-cadastro-livro select {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-bottom: 15px;  
+}

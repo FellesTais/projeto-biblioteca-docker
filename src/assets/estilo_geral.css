@@ -1,0 +1,243 @@
+/* Navbar */
+.navbar {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 7px;
+    border-radius: 16px;
+    border: none;
+    position: fixed;
+    top: 5px;
+    left: 4px;
+    right: 4px;
+    position: fixed;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 20px;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    font-weight: 500;
+    position: relative;
+}
+/* Fim Navbar */
+
+/* Início Carrossel*/
+h1 {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin: 20px 10px 20px 10px;
+    border-radius: 16px;
+    padding-top: 50px;
+}
+
+.componentes .carousel-item .card {
+    height: 300px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.componentes .carousel-item .card-img-top {
+    height: 190px;
+    object-fit: cover;
+}
+
+.card-wrapper {
+    perspective: 1000px;
+    width: 100%;
+    height: 100%;
+}
+
+.card-wrapper {
+    perspective: 1000px;
+    width: 100%;
+    height: 100%;
+}
+
+.conteudo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card-wrapper:hover .conteudo {
+    transform: rotateY(180deg);
+}
+
+.conteudo-front,
+.conteudo-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.conteudo-back {
+    transform: rotateY(180deg);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    padding-top: 40px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.conteudo-back .badge {
+    position: absolute;
+    top: 10px;
+    /* 10px do topo */
+    left: 50%;
+    /* posiciona no meio horizontalmente */
+    transform: translateX(-50%);
+    /* centraliza a badge */
+    font-size: 12px;
+    /* 0.75rem = 12px */
+    padding: 4px 8px;
+    /* 0.25em e 0.5em convertidos aproximados */
+    z-index: 10;
+}
+
+.carrossel-sinopse {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 6px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.2em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    white-space: normal;
+    box-sizing: content-box;
+    max-height: calc(1.2em * 10 + 20px);
+}
+
+.carrossel-botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.tabs-section .nav-tabs .nav-link {
+    color: #ddd;
+    transition: 0.3s;
+}
+
+.tabs-section .nav-tabs .nav-link.active {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.exibicao-livro-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+.exibicao-livro-card:hover {
+    transform: scale(1.08);
+}
+
+.exibicao-livro-titulo {
+    text-align: left;
+    min-height: 50px;
+    display: flex;
+    padding: 10px;
+}
+
+.exibicao-livro-capa {
+    display: block;
+    margin: 0 auto;
+    height: 350px;
+    width: 100%;
+    max-width: 90%;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.livrosContainer  {
+  margin-bottom: 10px;
+}
+
+.visualizacao-capa-livro {
+    display: block;
+    margin: 0 auto;
+    height: 350px;
+    width: 100%;
+    max-width: 90%;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.imagem-container {
+    padding: 2px;
+    position: relative;
+}
+
+.btn-expandir-imagem {
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    z-index: 10;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.btn-expandir-imagem:hover {
+    opacity: 1;
+}
+
+#modalImagemExpandida .modal-content {
+    position: relative;
+}
+
+#modalImagemExpandida .btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1050;
+}
+
+.sinopse-visualizacao-livro {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 15px;
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.texto-mensagem-confirmaco {
+    font-size: 18px;
+}
